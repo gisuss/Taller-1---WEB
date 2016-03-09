@@ -5,7 +5,7 @@
 		<title>Salvemos al planeta</title>
 		<meta charset="iso-8559-1"/>
 		<meta name="description" content="Pagina Ecologica"/>
-		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 		<link rel="stylesheet" href="taller1.css"/>
 
 		<style>
@@ -15,12 +15,74 @@
 				src:url('King Richard Italic.ttf')
 			}
 
+			/* Tamaño de pantalla de: 980px a inf */
 			@media screen and (min-width: 980px) {
+				aside {
+					width: 50%;
+					margin-left: 10px;
+				}
 
+				section {
+					width: 65%;
+					margin-left: 40px;
+				}
+
+				nav {
+					margin-bottom: 40px;
+				}
+
+				body {
+					background-color: #f2d9d9; /* rojo palido */
+				}
 			}
 
-			@media screen and (max-width: 700px) {
+			/* Tamaño de pantalla de: 700px a 980px */
+			@media screen and (max-width: 980px) and (min-width: 700px) {
+				aside {
+					width: auto;
+				}
 
+				section {
+					width: 65%;
+				}
+
+				nav {
+					margin-bottom: 40px;
+				}
+
+				body {
+					background-color: #ffe6b3; /* Ocre */
+				}
+			}
+
+			/* Tamaño de pantalla de: 480px a 700px */
+			@media screen and (max-width: 700px) and (min-width: 480px) {
+				aside {
+					width: auto;
+				}
+
+				section {
+					width: auto;
+				}
+
+				body {
+					background-color: #99e6ff; /* azul cielo */
+				}
+			}
+
+			/* Tamaño de pantalla de: 0px a 480px */
+			@media screen and (max-width: 480px) {
+				aside {
+					width: auto;
+				}
+
+				section {
+					width: auto;
+				}
+
+				body {
+					background-color: #dfbe9f; /* marron */
+				}
 			}
 
 		</style>
