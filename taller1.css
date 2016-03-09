@@ -1,70 +1,9 @@
 
-p {
-	font: 17px 'TituloPrincipal';
-	color: #ffffff;
-	margin: 15px auto;
-	padding: 9px;
-}
-
-#contenedor {
-	float: left;
-	width: 1080px;
-}
-
-#noticias table {
-	float: left;
-	width: 700px;
-	margin-left: 50px;
-	border-collapse: separate;
-	border-spacing: 15px; /* Separacion entre elementos */
-	border-radius: 8px;
-}
-
-#noticias table tr td {
-	width: 200px;
-	height: 100px;
-	border-radius: 8px;
-	transition: width 2s, height 2s, transform 2s;
-}
-
-#noticias table td:hover {
-	width: 300px;
-	height: 200px;
-	/*transform: rotate(360deg);*/
-}
-
-#sidebar table {
-	float: right;
-	width: 300px;
-	border-radius: 20px;
-	background-color: #000000;
-	text-align: center;
-}
-
-#sidebar table tr td {
-	border-radius: 50px;
-}
-
-a { /* para los enlaces */
-	text-decoration:none;
-	color: #3399ff;
-}
-
-a:hover { /* para cuando pasas sobre un enlace */
-	text-decoration:underline;
-	background-color: #b3ecff;
-}
-
-a:visited { /* para los que ya as visitado */
-	text-decoration:none;
-	color: #ffffff;
-}
-
 #titulo {
 	width: 500px; /* Anchura */
 	background-image: url("images/planeta.png");
 	text-align: center;
-	font: 20px 'TituloPrincipal';
+	font: 30px;
 	color: #ffffff;
 	margin: 15px auto;
 	padding: 9px;
@@ -80,63 +19,101 @@ a:visited { /* para los que ya as visitado */
 	-webkit-transform:rotate(5deg);
 }
 
-#cuerpo {
-	background: url("images/planeta.png") no-repeat center center fixed;
-	background-color: #cccccc;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-}
-
-#N1 {
-	background-image: url("images/dicaprio.jpg");
-	background-repeat: no-repeat;
-}
-
-#N2 {
-	background-image: url("images/RacingExtinction.jpg");
-	background-repeat: no-repeat;
-}
-
-#N3 {
-	background-image: url("images/mantarraya.jpg");
-	background-repeat: no-repeat;
-}
-
-#N4 {
-	background-image: url("images/pulpo.jpg");
-	background-repeat: no-repeat;
-}
-
-#N5 {
-	background-image: url("images/osospolares.jpg");
-	background-repeat: no-repeat;
-}
-
-#N6 {
-	background-image: url("images/contaminacion.jpg");
-	background-repeat: no-repeat;
-}
-
-#N7 {
-	background-image: url("images/oceanos.jpg");
-	background-repeat: no-repeat;
-}
-
-#N8 {
-	background-image: url("images/arboles.jpg");
-	background-repeat: no-repeat;
-}
-
-#N9 {
-	background-image: url("images/carne.jpg");
-	background-repeat: no-repeat;
-}
-
-#pie{
-	text-align: right;
+#cita {
+	text-align: justify;
 	font-style: italic;
-	color: #ffffff;
+}
+
+#imagen {
+	width: 300px;
+	height: 200px;
+	border-radius: 8px;
+	transition: width 2s, height 2s, transform 2s;
+}
+
+#imagen:hover {
+	width: 400px;
+	height: 300px;
+	/*transform: rotate(360deg);*/
+}
+
+section {
+	display: inline-block;
+	position: relative;
+	position: top;
+	width: auto;
+	max-width: 800px;
+	min-width: 400px;
+	margin-left: 40px;
+	margin-bottom: 30px;
+	margin-top: 30px;
+	border-radius: 8px;
+	border: 3px solid #663300;
+	padding: 0.01em 16px;
+}
+
+article {
+	border-bottom: 3px solid #663300;
+}
+
+aside {
+	display: inline-block;
+	position: relative;
+	width: auto;
+	max-width: 300px;
+	min-width: 200px;
+	margin-left: 40px;
+	margin-bottom: 30px;
+	margin-top: 30px;
+	border-radius: 8px;
+	border: 3px solid #663300;
+	padding: 9px;
+}
+
+footer {
+	text-align: right;
+}
+
+.cajacontenedoraTitulo {
+	text-align: center;
+	padding: 0.01em 16px;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+}
+
+.cajacontenedoraPie {
+	display: block;
 	clear: both;
+	padding: 0.01em 16px;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+
+.Tealcolor {
+	color: #fff !important;
+	background-color:#009688 !important;
+}
+
+ul {
+	list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+	float: left;
+}
+
+li a {
+	display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+	background-color: #4CAF50;
 }
