@@ -31,10 +31,13 @@
 @media screen and (max-width: 980px) and (min-width: 700px) {
 	aside {
 		width: auto;
+		margin: auto;
+		margin-left: 15px;
 	}
 
 	section {
-		width: 65%;
+		width: 47%;
+		margin: auto;
 	}
 
 	.navi {
@@ -55,7 +58,7 @@
 	}
 
 	section {
-		width: auto;
+		width: 350px;
 	}
 
 	.navi {
@@ -77,7 +80,7 @@
 	}
 
 	section {
-		width: auto;
+		width: 350px;
 		margin: 0 auto;
 	}
 
@@ -99,7 +102,8 @@
 section {
 	float: left;
 	display: inline-block;
-	width: auto; /* auto */
+	max-width: 680px;
+	min-width: 350px;
 	margin-bottom: 30px;
 	border-radius: 8px;
 	border: 3px solid #663300;
@@ -109,7 +113,7 @@ section {
 aside {
 	float: left;
 	display: inline-block;
-	width: 300px; /* auto */
+	width: 300px;
 	max-width: 300px;
 	min-width: 300px;
 	margin-bottom: 30px;
@@ -124,11 +128,6 @@ footer {
 
 nav {
 	margin-bottom: 30px;
-}
-
-.contenedor {
-	margin: 0 auto;
-	width: auto;
 }
 
 .cajacontenedoraTitulo {
@@ -194,7 +193,7 @@ li:hover {
 .vista {
     width: 300px;
     height: 200px;
-    margin: 10px;
+    margin: 10px 10px;
     float: left;
     border: 10px solid #fff;
     overflow: hidden;
@@ -253,25 +252,13 @@ li:hover {
 }
 
 .vista img {
-    -webkit-transition: all 0.3s ease-in-out; 
-    -moz-transition: all 0.3s ease-in-out; 
-    -o-transition: all 0.3s ease-in-out; 
-    -ms-transition: all 0.3s ease-in-out; 
     transition: all 0.3s ease-in-out; 
 }
 
 .vista .mask {
     opacity: 1;
     background-color: hsla(5,23%,46%,0.3);
-    -webkit-transform: translateX(-300px);
-    -moz-transform: translateX(-300px);
-    -o-transform: translateX(-300px);
-    -ms-transform: translateX(-300px);
-    transform: translateX(-300px);
-    -webkit-transition: all 0.4s ease-in-out; 
-    -moz-transition: all 0.4s ease-in-out; 
-    -o-transition: all 0.4s ease-in-out; 
-    -ms-transition: all 0.4s ease-in-out; 
+    transform: translateX(-300px); 
     transition: all 0.4s ease-in-out; 
 }
 
@@ -285,39 +272,17 @@ li:hover {
     opacity: 0;
     color: #333;
     margin-top: 20px;
-    -webkit-transition: all 0.2s linear;
-    -moz-transition: all 0.2s linear;
-    -o-transition: all 0.2s linear;
-    -ms-transition: all 0.2s linear;
-    transition: all 0.2s linear;
 }
 
-.vista:hover .mask { 
-    -webkit-transform: translateX(0px);
-    -moz-transform: translateX(0px);
-    -o-transform: translateX(0px);
-    -ms-transform: translateX(0px);
+.vista:hover .mask {
     transform: translateX(0px);
 }
 
-.vista:hover img { 
-    -webkit-transform: translateX(300px);
-    -moz-transform: translateX(300px);
-    -o-transform: translateX(300px);
-    -ms-transform: translateX(300px);
+.vista:hover img {
     transform: translateX(300px);
-    -webkit-transition-delay: 0.1s;
-    -moz-transition-delay: 0.1s;
-    -o-transition-delay: 0.1s;
-    -ms-transition-delay: 0.1s;
     transition-delay: 0.1s;
 }
 
 .vista:hover q {
     opacity: 1;
-    -webkit-transition-delay: 0.4s;
-    -moz-transition-delay: 0.4s;
-    -o-transition-delay: 0.4s;
-    -ms-transition-delay: 0.4s;
-    transition-delay: 0.4s;
 }
