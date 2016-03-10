@@ -3,95 +3,16 @@
 	<head>
 
 		<title>Salvemos al planeta</title>
-		<meta charset="iso-8559-1"/>
+		<meta charset="utf-8">
 		<meta name="description" content="Pagina Ecologica"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 		<link rel="stylesheet" href="taller1.css"/>
-
-		<style>
-
-			@font-face {
-				font-family:'TituloPrincipal';
-				src:url('King Richard Italic.ttf')
-			}
-
-			/* Tamaño de pantalla de: 980px a inf */
-			@media screen and (min-width: 980px) {
-				aside {
-					width: 50%;
-					margin-left: 10px;
-				}
-
-				section {
-					width: 65%;
-					margin-left: 40px;
-				}
-
-				nav {
-					margin-bottom: 40px;
-				}
-
-				body {
-					background-color: #f2d9d9; /* rojo palido */
-				}
-			}
-
-			/* Tamaño de pantalla de: 700px a 980px */
-			@media screen and (max-width: 980px) and (min-width: 700px) {
-				aside {
-					width: auto;
-				}
-
-				section {
-					width: 65%;
-				}
-
-				nav {
-					margin-bottom: 40px;
-				}
-
-				body {
-					background-color: #ffe6b3; /* Ocre */
-				}
-			}
-
-			/* Tamaño de pantalla de: 480px a 700px */
-			@media screen and (max-width: 700px) and (min-width: 480px) {
-				aside {
-					width: auto;
-				}
-
-				section {
-					width: auto;
-				}
-
-				body {
-					background-color: #99e6ff; /* azul cielo */
-				}
-			}
-
-			/* Tamaño de pantalla de: 0px a 480px */
-			@media screen and (max-width: 480px) {
-				aside {
-					width: auto;
-				}
-
-				section {
-					width: auto;
-				}
-
-				body {
-					background-color: #dfbe9f; /* marron */
-				}
-			}
-
-		</style>
 
 	</head>
 
 	<body>
 		
-		<header class="cajacontenedoraTitulo Tealcolor">
+		<header class="cajacontenedoraTitulo Tealcolor" id="inicio">
 			<h1>Hablemos sobre Cuidar a nuestro Planeta Tierra</h1>
 		</header>
 
@@ -99,140 +20,110 @@
 
 		<nav>
 			<ul>
-				<li><a target="_blank" href="http://www.latam.discovery.com/animal-planet/">Animal Planet</a> </li>
-				<li><a target="_blank" href="http://www.latam.discovery.com/">Discovery Channel</a> </li>
-				<li><a target="_blank" href="http://racingextinction.com/">Racing Extinction</a> </li>
+				<li class="navi"><a target="_blank" href="http://www.latam.discovery.com/animal-planet/">Animal Planet</a> </li>
+				<li class="navi"><a target="_blank" href="http://www.latam.discovery.com/">Discovery Channel</a> </li>
+				<li class="navi"><a target="_blank" href="http://racingextinction.com/">Racing Extinction</a> </li>
 			</ul>
 		</nav>
 
 		<section>
+			<div class="contenedor">
+				<div class="vista">
+					<img src="images/dicaprio.jpg">
+					<div class="mask">
+						<h3>DiCaprio: "No demos el planeta por sentado"</h3>
+						<q>Necesitamos apoyar a los lideres de todo el mundo que no hablan en nombre de las grandes contaminantes.</q><br><br>
+						<a target="_blank" href="http://www.cnnexpansion.com/lifestyle/2016/02/29/dicaprio-recibe-el-oscar-con-un-discurso-ambientalista" class="info">Leer Mas</a>
+					</div>
+				</div>
 
-			<article>
-				<header>
-					<h3>DiCaprio: "No demos el planeta por sentado"</h3>
-				</header>
-				<q id="cita">Necesitamos trabajar juntos y dejar de procrastinar. Necesitamos apoyar a los lideres de todo el mundo que no hablan en nombre de las grandes contaminantes, de las que hablan por las grandes corporaciones, sino en nombre de toda la humanidad.</q>
-				<br>
-				<figure align="center">
-					<img src="images/dicaprio.jpg" id="imagen">
-					<figcaption>
-						<a target="_blank" href="http://www.cnnexpansion.com/lifestyle/2016/02/29/dicaprio-recibe-el-oscar-con-un-discurso-ambientalista">DiCaprio: "No demos el planeta por sentado. Yo no dare esta noche por sentada."</a>
-					</figcaption>
-				</figure>
-			</article>
+				<div class="vista">
+					<img src="images/RacingExtinction.jpg">
+					<div class="mask">
+						<h3>Hay que tomar conciencia del problema</h3>
+						<q>Si empezamos por hacer aunque sea una minima cosa para mejorar el medio ambiente, juntos lograremos mundo mucho mas saludable.</q><br><br>
+						<a target="_blank" href="http://racingextinction.com/the-film/" class="info">Leer Mas</a>
+					</div>
+				</div>
+			</div>
 
-			<article>
-				<header>
-					<h3>Meizer: "Hay que hacer que la gente tome conciencia del problema"</h3>
-				</header>
-				<q id="cita">Si cada uno de nosotros empieza por hacer aunque sea una minima cosa para mejorar el medio ambiente, juntos lograremos dejarle a las futuras generaciones un mundo mucho mas saludable.</q>
-				<br>
-				<figure align="center">
-					<img src="images/RacingExtinction.jpg" id="imagen">
-					<figcaption>
-						<a target="_blank" href="http://racingextinction.com/the-film/">Meizer: "Hay que hacer que la gente tome conciencia del problema"</a>
-					</figcaption>
-				</figure>
-			</article>
+			<div class="contenedor">
+				<div class="vista">
+					<img src="images/mantarraya.jpg">
+					<div class="mask">
+						<h3>La cruzada de Louie Psihoyos por proteger a la mantarraya</h3>
+						<q>El director Louie Psihoyos denuncia la caza desmedida de esta especie.</q><br><br>
+						<a target="_blank" href="http://www.latam.discovery.com/naturaleza/la-cruzada-de-louie-psihoyos-por-proteger-a-la-mantarraya/" class="info">Leer Mas</a>
+					</div>
+				</div>
 
-			<article>
-				<header>
-					<h3>La cruzada de Louie Psihoyos por proteger a la mantarraya</h3>
-				</header>
-				<q id="cita">El director del impactante documental Racing Extinction denuncia la caza desmedida de esta especie y explica porque es conveniente su conservacion.</q>
-				<br>
-				<figure align="center">
-					<img src="images/mantarraya.jpg" id="imagen">
-					<figcaption>
-						<a target="_blank" href="http://www.latam.discovery.com/naturaleza/la-cruzada-de-louie-psihoyos-por-proteger-a-la-mantarraya/">La cruzada de Louie Psihoyos por proteger a la mantarraya</a>
-					</figcaption>
-				</figure>
-			</article>
+				<div class="vista">
+					<img src="images/pulpo.jpg">
+					<div class="mask">
+						<h3>Cientificos descubren nueva especie de pulpo</h3>
+						<q>Este descubrimiento ocurrio el 27 de febrero, despues de que los investigadores encontraran a un pulpo a una profundidad de 2.5 millas.</q><br><br>
+						<a target="_blank" href="http://www.sopitas.com/589905-descubrimiento-cientificos-pulpo-animales/" class="info">Leer Mas</a>
+					</div>
+				</div>
 
-			<article>
-				<header>
-					<h3>Cientificos descubren una nueva especie de pulpo</h3>
-				</header>
-				<q id="cita">Este descubrimiento ocurrio el 27 de febrero, despues de que los investigadores encontraran a un pulpo a una profundidad de 2.5 millas (4.92 km). Este pulpo no tiene agallas, ademas que sus ventosas se encuentran en una sola fila.</q>
-				<br>
-				<figure align="center">
-					<img src="images/pulpo.jpg" id="imagen">
-					<figcaption>
-						<a target="_blank" href="http://www.sopitas.com/589905-descubrimiento-cientificos-pulpo-animales/">Cientificos descubren una nueva especie de pulpo.</a>
-					</figcaption>
-				</figure>
-			</article>
+				<div class="contenedor">
+				<div class="vista">
+					<img src="images/osospolares.jpg">
+					<div class="mask">
+						<h3>¡Osos polares en peligro!</h3>
+						<q>Estimacion de la Union Internacional para la Conservacion de la Naturaleza: El deshielo del casquete polar artico causado por el cambio climatico afectaria sus posibilidades de alimentarse.</q><br><br>
+						<a target="_blank" href="http://www.clarin.com/sociedad/Osos-polares-peligro-poblacion-reducira_0_1471053154.html" class="info">Leer Mas</a>
+					</div>
+				</div>
 
-			<article>
-				<header>
-					<h3>Osos polares en peligro: su poblacion se reduciria 30% hacia 2050</h3>
-				</header>
-				<q id="cita">Estimacion de la Union Internacional para la Conservacion de la Naturaleza: El deshielo del casquete polar artico causado por el cambio climatico afectaria sus posibilidades de alimentarse.</q>
-				<br>
-				<figure align="center">
-					<img src="images/osospolares.jpg" id="imagen">
-					<figcaption>
-					<a target="_blank" href="http://www.clarin.com/sociedad/Osos-polares-peligro-poblacion-reducira_0_1471053154.html">Osos polares en peligro: su poblacion se reduciria 30% hacia 2050.</a>
-					</figcaption>
-				</figure>
-			</article>
+				<div class="vista">
+					<img src="images/contaminacion.jpg">
+					<div class="mask">
+						<h3>Gases de efecto invernadero amenazan vida en la Tierra</h3>
+						<q>El dioxido de carbono tiene la potencia de secar los oceanos y dejar al planeta sin recursos hidricos.</q><br><br>
+						<a target="_blank" href="http://rasainforma.com/noticias/ciencia-y-tecnologia/gases-de-efecto-invernadero-son-una-amenaza-para-la-vida-en-la-tierra/154798/" class="info">Leer Mas</a>
+					</div>
+				</div>
 
-			<article>
-				<header>
-					<h3>Gases de efecto invernadero son una amenaza para la vida en la Tierra</h3>
-				</header>
-				<q id="cita">El dioxido de carbono tiene la potencia de secar los oceanos y dejar a la humanidad sin recursos hidricos.</q>
-				<br>
-				<figure align="center">
-					<img src="images/contaminacion.jpg" id="imagen">
-					<figcaption>
-						<a target="_blank" href="http://rasainforma.com/noticias/ciencia-y-tecnologia/gases-de-efecto-invernadero-son-una-amenaza-para-la-vida-en-la-tierra/154798/">Gases de efecto invernadero son una amenaza para la vida en la Tierra.</a>
-					</figcaption>
-				</figure>
-			</article>
+				<div class="contenedor">
+				<div class="vista">
+					<img src="images/arboles.jpg">
+					<div class="mask">
+						<h3>"Superarboles" contra el cambio climatico</h3>
+						<q>Un grupo de cientificos chilenos estan tratando de conseguir crear arboles que tengan la resistencia necesaria para soportar el cambio climatico.</q><br><br>
+						<a target="_blank" href="http://www.meteorologiaenred.com/superarboles-contra-el-cambio-climatico.html" class="info">Leer Mas</a>
+					</div>
+				</div>
 
-			<article>
-				<header>
-					<h3>El futuro de los Oceanos</h3>
-				</header>
-				<q id="cita">El deshielo podria hacer aumentar el nivel de los mares, y si este aumenta, tambien aumentara la temperatura en la Tierra, segun un nuevo estudio publicado por la Academia de Ciencias de los Estados Unidos (PNAS).</q>
-				<br>
-				<figure align="center">
-					<img src="images/oceanos.jpg" id="imagen">
-					<figcaption>
-						<a target="_blank" href="http://www.meteorologiaenred.com/el-futuro-de-los-oceanos.html">El futuro de los Oceanos.</a>
-					</figcaption>
-				</figure>
-			</article>
+				<div class="vista">
+					<img src="images/oceanos.jpg">
+					<div class="mask">
+						<h3>El futuro de los Oceanos</h3>
+						<q>El deshielo podria hacer aumentar el nivel de los mares, y si este aumenta, tambien aumentara la temperatura en la Tierra, segun un nuevo estudio publicado por PNAS.</q><br><br>
+						<a target="_blank" href="http://www.meteorologiaenred.com/el-futuro-de-los-oceanos.html" class="info">Leer Mas</a>
+					</div>
+				</div>
 
-			<article>
-				<header>
-					<h3>"Superarboles" contra el cambio climatico</h3>
-				</header>
-				<q id="cita">Un grupo de cientificos chilenos de la region hortofruticola de O'Higgs, a dos horas de Santiago, estan tratando de conseguir crear algo asi como "superarboles" que tengan la resistencia y capacidad necesarias para soportar los efectos del cambio climatico.</q>
-				<br>
-				<figure align="center">
-					<img src="images/arboles.jpg" id="imagen">
-					<figcaption>
-						<a target="_blank" href="http://www.meteorologiaenred.com/superarboles-contra-el-cambio-climatico.html">Superarboles" contra el cambio climatico.</a>
-					</figcaption>
-				</figure>
-			</article>
+				<div class="contenedor">
+				<div class="vista">
+					<img src="images/carne.jpg">
+					<div class="mask">
+						<h3>El impacto ambiental de comer Carne</h3>
+						<q>La agricultura animal es responsable de un 15% de las emisiones totales de gases de efecto invernadero provocados por el hombre.</q><br><br>
+						<a target="_blank" href="http://www.latam.discovery.com/shows/racingextinction/informate/el-impacto-ambiental-de-comer-carne/" class="info">Leer Mas</a>
+					</div>
+				</div>
 
-			<article>
-				<header>
-					<h3>El impacto ambiental de comer Carne</h3>
-				</header>
-				<q id="cita">De acuerdo con la Organizacion de las Naciones Unidas para la Agricultura y la Alimentacion, la agricultura animal es responsable de aproximadamente el 15% de las emisiones totales de gases de efecto invernadero provocados por el ser humano.</q>
-				<br>
-				<figure align="center">
-					<img src="images/carne.jpg" id="imagen">
-					<figcaption>
-						<a target="_blank" href="http://www.latam.discovery.com/shows/racingextinction/informate/el-impacto-ambiental-de-comer-carne/">El impacto ambiental de comer Carne</a>
-					</figcaption>
-				</figure>
-			</article>
+				<div class="vista">
+					<img src="images/oladecalor.jpg">
+					<div class="mask">
+						<h3>El impacto humano sobre el cambio climatico se remonta a 1937</h3>
+						<q>El planeta ha batido récords de calor en los últimos 16 años debido al cambio climático.</q><br><br>
+						<a target="_blank" href="http://www.teinteresa.es/espana/IMPACTO-HUMANO-CAMBIO-CLIMATICO-REMONTA_0_1537046331.html" class="info">Leer Mas</a>
+					</div>
+				</div>
 
+			</div>
 		</section>
 
 		<aside>
@@ -255,12 +146,20 @@
 			</footer>
 		</aside>
 
-		<footer class="cajacontenedoraPie Tealcolor">
+		<div class="flotantearriba">
+			<a href="#inicio"><img src="images/boton-subir.png" border="0" id="imagen"/></a>
+		</div>
+		<div class="flotanteabajo">
+			<a href="#fin"><img src="images/boton-bajar.png" border="0" id="imagen"/></a>
+		</div>
+
+		<footer class="cajacontenedoraPie Tealcolor" id="fin">
 			<br>
 			<address>Desarrollado por:</address>
 			<address><b>Jesus Romero</b> - gisuss8520@gmail.com</address>
 			<address><b>Yessica Rios</b> - yskrios@gmail.com</address>
 			<br>
 		</footer>
+
 	</body>
 </html>
