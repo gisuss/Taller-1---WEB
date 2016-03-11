@@ -7,13 +7,11 @@
 /* Tamaño de pantalla de: 981px a inf */
 @media screen and (min-width: 981px) {
 	.contenedor {
-		display: flex;
+		display: inline-table;
 		justify-content: center;
 		width: 100%;
-	}
-
-	.contenedor2 {
-		width: 100%;
+		text-align: center;
+		margin: 0 auto;
 	}
 
 	aside {
@@ -172,10 +170,6 @@
 
 .contenedor {
 	margin-bottom: 30px;
-}
-
-.contenedor2 {
-	margin-bottom: 8px;
 }
 
 section {
