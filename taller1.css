@@ -9,11 +9,11 @@
 	.contenedor {
 		display: flex;
 		justify-content: center;
-		width: 95%;
+		width: 100%;
 	}
 
 	.contenedor2 {
-		width: auto;
+		width: 100%;
 	}
 
 	aside {
@@ -24,6 +24,20 @@
 
 	section {
 		width: 65%;
+	}
+
+	.articulos {
+		width: 65%;
+	}
+
+	.a1 {
+		width: 35%;
+	}
+
+	.main {
+		display: flex;
+		justify-content: center;
+		width: 95%;
 	}
 
 	.navi {
@@ -104,14 +118,23 @@
 
 /* Tamaño de pantalla de: 1px a 480px */
 @media screen and (max-width: 480px) {
+	section .contenedor2 div {
+		display: inline-table;
+		justify-content: center;
+		width: auto;
+	}
+
 	aside {
+		float: left;
 		width: auto;
 		margin: 0 auto;
 	}
 
 	section {
+		float: right;
 		width: auto;
 		margin: 0 auto;
+		top: 5000px;
 	}
 
 	article {
@@ -120,6 +143,16 @@
 
 	table {
 		width: 95%;
+	}
+
+	.vista {
+		width: 300px;
+		height: 200px;
+	}
+
+	.vista .mask {
+		width: 300px;
+		height: 200px;
 	}
 
 	.navi {
@@ -275,6 +308,7 @@ li:hover {
     background: hsla(0,0%,0%,0.8);
     margin: 20px 0 0 0;
 }
+
 .vista q {
     font-family: Georgia, serif;
     font-style: italic;
@@ -336,23 +370,51 @@ li:hover {
 }
 
 .a1 {
-	display: flex;
 	justify-content: center;
 	text-align: center;
 	margin: 0 auto;
 }
 
-article {
-	left: 10px;
+/* *** SECCION DE ARTICULOS PRINCIPALES *** */
+.articulos {
+	justify-content: center;
 	text-align: center;
-	float: left;
+	border-radius: 8px;
+	margin-bottom: 30px;
+}
+
+.articulos article {
+	border-bottom: 3px solid #663300;
+}
+
+.articulos img {
+	width: 300px;
+	height: 200px;
+	transition: width 2s, height 2s, transform 2s;
+}
+
+.articulos img:hover {
+	width: 350px;
+	height: 200px;
+}
+
+#cita {
+	text-align: justify;
+	font-style: italic;
+}
+
+/* ****************************************************** */
+
+.a1 article {
+	text-align: center;
+	/*float: left;*/
 	margin-bottom: 30px;
 	border: 3px solid #663300;
 	border-radius: 8px;
 	background-color: #fff7e6;
 }
 
-article h2 {
+.a1 article h2 {
 	padding-left: 10px;
 	padding-right: 10px;
 }
