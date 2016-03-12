@@ -127,7 +127,6 @@
 	.contenedor {
 		width: 100%;
 		margin: 0 auto;
-		display: center;
 		text-align: center;
 	}
 
@@ -385,7 +384,7 @@ li:hover {
 .articulos p {
 	font-family: Georgia, serif;
     font-size: 14px;
-    color: #black;
+    color: #000000;
     padding: 10px 10px 10px;
     text-align: justify;
 }
@@ -417,7 +416,7 @@ li:hover {
 	text-align: left;
 }
 
-/* *** TABLA *** */
+/* *** TABLA Y SIDEBAR *** */
 .col {
 	justify-content: center;
 	display: block;
